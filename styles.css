@@ -27,6 +27,10 @@
     background-position: 100% 220%;
   }
 
+  ul li {
+    list-style-type: none;
+  }
+
   .toolbar {
     justify-content: space-between;
     background-color: #3c3a39;
@@ -40,6 +44,7 @@
     font-weight: 700;
     color: #fff;
     padding-left: 24px;
+    text-decoration: none;
   }
 
   .title {
@@ -73,9 +78,8 @@
 
   .social-media-icons {
     flex-direction: row;
-    align-items: flex-start;
     padding-left: 24px;
-    gap: 13%;
+    gap: 5%;
   }
 
   .social-media-icon {
