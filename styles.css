@@ -4,6 +4,15 @@
   box-sizing: border-box;
 }
 
+.flex-row {
+  display: flex;
+}
+
+.flex-column {
+  display: flex;
+  flex-direction: column;
+}
+
 @media only screen and (min-width: 375px) and (max-width: 767px) {
   header {
     position: relative;
@@ -15,15 +24,10 @@
     background-color: #1c1a19;
     background-image: url(./img/Illustration.png);
     background-repeat: no-repeat;
-    background-position: 100% 210%;
-  }
-
-  footer {
-    display: flex;
+    background-position: 100% 220%;
   }
 
   .toolbar {
-    display: flex;
     justify-content: space-between;
     background-color: #3c3a39;
     align-items: center;
@@ -64,11 +68,21 @@
     color: #fff;
     padding-bottom: 24px;
     padding-left: 24px;
-    padding-right: 24px;
+    padding-right: 10%;
   }
 
-  .social-media-img {
-    display: flex;
+  .social-media-icons {
+    flex-direction: row;
+    align-items: flex-start;
     padding-left: 24px;
+    gap: 13%;
+  }
+
+  .social-media-icon {
+    height: 30px;
+    width: 30px;
+    left: 8px;
+    top: 8px;
+    border-radius: 0px;
   }
 }
