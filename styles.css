@@ -185,29 +185,6 @@ a {
     border: none;
   }
 
-  /* Section buttons functions */
-
-  .list-technologies-ul li:hover {
-    background: #75716f;
-  }
-
-  .button-project:hover {
-    background: #e5e5e5;
-    color: #ff6b00;
-    border: 1px solid #ff6b00;
-  }
-
-  .button-project:active {
-    color: #e5e5e5;
-    background: #ff6b00;
-  }
-
-  .button-project:disabled {
-    color: #3c3a39;
-    background: #e5e5e5;
-    border: 1px solid #3c3a39;
-  }
-
   /* Cards section */
 
   .cards {
@@ -279,7 +256,7 @@ a {
     padding: 12px;
   }
 
-  /* Section buttons functions */
+  /* Cards Section buttons functions */
 
   .list-technologies-card-ul li:hover {
     background: #3c3a39;
@@ -298,6 +275,29 @@ a {
   }
 
   .button-project-card:disabled {
+    color: #3c3a39;
+    background: #e5e5e5;
+    border: 1px solid #3c3a39;
+  }
+
+  /* My Work Section buttons functions */
+
+  .list-technologies-ul li:hover {
+    background: #75716f;
+  }
+
+  .button-project:hover {
+    background: #e5e5e5;
+    color: #ff6b00;
+    border: 1px solid #ff6b00;
+  }
+
+  .button-project:active {
+    color: #e5e5e5;
+    background: #ff6b00;
+  }
+
+  .button-project:disabled {
     color: #3c3a39;
     background: #e5e5e5;
     border: 1px solid #3c3a39;
