@@ -193,6 +193,7 @@ a {
     text-shadow: 1px 1px 2px ccc;
     padding-left: 24px;
     padding-bottom: 24px;
+    padding-right: 24px;
   }
 
   .single-card {
