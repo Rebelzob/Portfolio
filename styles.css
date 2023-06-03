@@ -226,7 +226,7 @@ a {
   .list-technologies-card-ul {
     flex-direction: row;
     list-style: none;
-    padding: 10px 12px;
+    padding: 10px 12px 20px;
     gap: 24px;
   }
 
@@ -391,10 +391,10 @@ a {
     font-family: 'Inter', sans-serif;
     font-style: normal;
     font-weight: 400;
-    font-size: 22px;
+    font-size: 20px;
     line-height: 43px;
     color: #fff;
-    padding: 32px 0;
+    padding: 6px 0;
   }
 
   /* Section buttons functions */
