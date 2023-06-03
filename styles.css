@@ -13,6 +13,11 @@
   flex-direction: column;
 }
 
+a {
+  text-decoration: none;
+  cursor: pointer;
+}
+
 @media only screen and (min-width: 375px) and (max-width: 767px) {
   header {
     position: relative;
@@ -22,14 +27,13 @@
 
   body {
     background-color: #1c1a19;
-    background-image: url(./img/Illustration.png);
-    background-repeat: no-repeat;
-    background-position: 100% 220%;
   }
 
   ul li {
     list-style-type: none;
   }
+
+  /* Hero section */
 
   .toolbar {
     justify-content: space-between;
@@ -44,7 +48,14 @@
     font-weight: 700;
     color: #fff;
     padding-left: 24px;
-    text-decoration: none;
+  }
+
+  .hero {
+    background-image: url(./img/Illustration.png);
+    background-repeat: no-repeat;
+    background-position-x: right;
+    background-position-y: bottom;
+    padding-bottom: 190px;
   }
 
   .title {
@@ -88,5 +99,320 @@
     left: 8px;
     top: 8px;
     border-radius: 0;
+  }
+
+  /* My recent works section */
+
+  .recent-works {
+    background-color: #e5e5e5;
+    padding-left: 24px;
+    padding-right: 24px;
+    padding-bottom: 60px;
+  }
+
+  .sub-title-2 {
+    font-family: 'Crete Round', sans-serif;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 130%;
+    width: 100%;
+    justify-content: center;
+    padding-top: 100px;
+    padding-bottom: 24px;
+  }
+
+  .vector {
+    justify-content: center;
+    flex-grow: 2;
+  }
+
+  .img-recent-works {
+    padding-top: 80px;
+    justify-content: center;
+  }
+
+  .sub-title-3 {
+    font-family: 'Crete Round', sans-serif;
+    font-size: 32px;
+    color: #091e42;
+    padding-top: 24px;
+  }
+
+  .infography-works {
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+    color: #091e42;
+    padding-top: 12px;
+  }
+
+  .list-technologies-ul {
+    width: 100%;
+    flex-direction: row;
+    gap: 12px;
+    align-items: center;
+    padding-top: 12px;
+  }
+
+  .list-technologies-ul li {
+    font-family: 'Inter', sans-serif;
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 20px;
+    padding: 10px 12px;
+    border-style: solid;
+    border: 1px solid #8993a4;
+    color: #091e42;
+  }
+
+  .button-cont {
+    padding-top: 12px;
+  }
+
+  .button-project {
+    font-family: 'Inter', sans-serif;
+    letter-spacing: 0.03em;
+    color: #e5e5e5;
+    font-size: 15px;
+    font-weight: 700;
+    text-align: center;
+    background: #ff6b00;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+    padding: 12px;
+    width: 124px;
+    height: 48px;
+    border: none;
+  }
+
+  /* Cards section */
+
+  .cards {
+    background-color: #e5e5e5;
+    display: grid;
+    text-shadow: 1px 1px 2px ccc;
+    padding-left: 24px;
+    padding-bottom: 24px;
+    padding-right: 24px;
+  }
+
+  .single-card {
+    flex-direction: column;
+    background-image: url(./img/card-background.png);
+    background-size: cover;
+    justify-content: end;
+    height: 386px;
+  }
+
+  .card-title {
+    font-family: 'Crete Round', sans-serif;
+    color: #fff;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 44px;
+    padding: 72px 0 12px 13px;
+  }
+
+  .infography-card {
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    color: #fff;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    padding: 0 13px 14px 13px;
+  }
+
+  .list-technologies-card-ul {
+    flex-direction: row;
+    list-style: none;
+    padding: 10px 12px 20px;
+    gap: 24px;
+  }
+
+  .list-technologies-card-ul li {
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-size: 15px;
+    line-height: 20px;
+    background: rgba(255, 255, 255, 0.24);
+    padding: 10px 12px;
+    color: #fff;
+  }
+
+  .button-project-card {
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 17px;
+    line-height: 24px;
+    letter-spacing: 0.03rem;
+    background-color: #ff6b00;
+    color: #fff;
+    align-items: center;
+    text-align: center;
+    border: 1px solid #ff6b00;
+    justify-content: center;
+    padding: 12px;
+  }
+
+  /* Cards Section buttons functions */
+
+  .list-technologies-card-ul li:hover {
+    background: #3c3a39;
+    border: 1px solid #75716f;
+  }
+
+  .button-project-card:hover {
+    background: #e5e5e5;
+    color: #ff6b00;
+    border: 1px solid #ff6b00;
+  }
+
+  .button-project-card:active {
+    color: #e5e5e5;
+    background: #ff6b00;
+  }
+
+  .button-project-card:disabled {
+    color: #3c3a39;
+    background: #e5e5e5;
+    border: 1px solid #3c3a39;
+  }
+
+  /* My Work Section buttons functions */
+
+  .list-technologies-ul li:hover {
+    background: #75716f;
+  }
+
+  .button-project:hover {
+    background: #e5e5e5;
+    color: #ff6b00;
+    border: 1px solid #ff6b00;
+  }
+
+  .button-project:active {
+    color: #e5e5e5;
+    background: #ff6b00;
+  }
+
+  .button-project:disabled {
+    color: #3c3a39;
+    background: #e5e5e5;
+    border: 1px solid #3c3a39;
+  }
+
+  /* About me section */
+
+  .about-me {
+    background-color: #1c1a19;
+  }
+
+  .about-top {
+    background-image: url(./img/Illustration\ 2.png);
+    background-repeat: no-repeat;
+    background-position-y: bottom;
+    background-position-x: right;
+    padding-bottom: 190px;
+  }
+
+  .title-about {
+    font-family: 'Crete Round', sans-serif;
+    font-size: 72px;
+    font-weight: 400;
+    line-height: 88px;
+    letter-spacing: 0.33;
+    color: #ff6b00;
+    padding: 120px 24px 24px;
+  }
+
+  .infography-about {
+    font-family: 'Inter', sans-serif;
+    color: #f4f5f7;
+    padding: 0 24px 24px;
+  }
+
+  .button-cont-resume {
+    padding-left: 24px;
+  }
+
+  .button-resume {
+    font-family: 'Inter', sans-serif;
+    letter-spacing: 0.03em;
+    color: #e5e5e5;
+    font-size: 15px;
+    font-weight: 700;
+    text-align: center;
+    background: #ff6b00;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+    padding: 12px;
+    width: 156px;
+    height: 48px;
+    border: none;
+  }
+
+  .about-bottom {
+    align-items: center;
+    padding-top: 136px;
+  }
+
+  .ab-titles {
+    font-family: 'Inter', sans-serif;
+    color: #fff;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 44px;
+    text-align: center;
+    padding: 44px 0;
+  }
+
+  .languages::before {
+    content: url(./img/diamond.png);
+  }
+
+  .frameworks::before {
+    content: url(./img/square.png);
+  }
+
+  .skills::before {
+    content: url(./img/circle.png);
+  }
+
+  .ab-bt-blocks ul {
+    text-align: center;
+  }
+
+  .about-bullet {
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 43px;
+    color: #fff;
+    padding: 6px 0;
+  }
+
+  /* Section buttons functions */
+  .button-resume:hover {
+    background: #e5e5e5;
+    color: #ff6b00;
+    border: 1px solid #ff6b00;
+  }
+
+  .button-resume:active {
+    color: #e5e5e5;
+    background: #ff6b00;
+  }
+
+  .button-resume:disabled {
+    color: #3c3a39;
+    background: #e5e5e5;
+    border: 1px solid #3c3a39;
   }
 }
