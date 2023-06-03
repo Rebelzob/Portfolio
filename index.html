@@ -13,8 +13,12 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter&family=Poppins&display=swap" rel="stylesheet">
 </head>
 <body>
+  <!--Header-->
   <header>
     <div class="toolbar flex-row">
       <a class="logo" href="#">My Logo</a>
@@ -24,43 +28,237 @@
     </div>
   </header>
   <main>
-    <section>
-      <h1 class="title">Hey there. <br> I'm Karim.</h1>
-      <h3 class="sub-title-1">I'm a Software Developer</h3>
-      <p class="infography">
-        I can help you build a product , feature or website Look through some of my work and experience! If you like what you see and have a project you need coded, 
-        don't hesitate to contact me.
-      </p>
+    <div class="hero flex-row">
+      <section>
+        <h1 class="title">Hey there. <br> I'm Karim.</h1>
+        <h4 class="sub-title-1">I'm a Software Developer</h4>
+        <p class="infography">
+          I can help you build a product , feature or website Look through some of my work and experience! If you like what you see and have a project you need coded, 
+          don't hesitate to contact me.
+        </p>
+        <ul class="social-media-icons flex-row">
+          <li>
+            <a href="https://github.com/Rebelzob" target="_blank" rel="noopener">
+              <img class="social-media-icon" src="./img/Icon -GitHub.png" alt="Github">
+            </a>
+          </li>
+          <li>
+            <a href="https://www.linkedin.com/in/karim-barragan/" target="_blank" rel="noopener">
+              <img class="social-media-icon" src="./img/Icon - Linkedin.png" alt="Linkedin">
+            </a>
+          </li>
+          <li>
+            <a href="https://www.angellist.com/" target="_blank" rel="noopener">
+              <img class="social-media-icon" src="./img/Icon - Angelist.png" alt="Angelist">
+            </a>
+          </li>
+          <li>
+            <a href="https://twitter.com/home" target="_blank" rel="noopener">
+              <img class="social-media-icon" src="./img/Icon - Twitter.png" alt="Twitter">
+            </a>
+          </li>
+          <li>
+            <a href="https://medium.com/" target="_blank" rel="noopener">
+              <img class="social-media-icon" src="./img/Icon - Medium.png" alt="Medium">
+            </a>
+          </li>
+        </ul>
+      </section>
+    </div>
+    <!--Recent Works Section-->
+    <section class="recent-works flex-row">
+      <article>
+        <div>
+          <h2 class="sub-title-2 flex-row">My Recent Works</h2>
+        </div>
+        <figure class="vector flex-row">
+          <img src="./img/Vector.png" alt="vector">
+        </figure>
+        <figure  class="img-recent-works flex-row">
+          <img src="./img/Img Placeholder.svg" alt="img placeholder">
+        </figure>
+        <div class="work-content">
+          <div class="sub-title-3">
+            <h3>Multi-Post Stories</h3>
+          </div>
+          <div class="infography-works flex-row">
+            <p>
+              A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's
+              standard dummy text ever since the 1500s, when an unknown printer took a standard dummy text.
+            </p>
+          </div>
+          <div class="list-technologies flex-row">
+            <ul class="list-technologies-ul flex-row">
+              <li><a>CSS</a></li>
+              <li><a>HTM</a>L</li>
+              <li><a>Bootstrap</a></li>
+              <li><a>Ruby</a></li>
+            </ul>
+          </div>
+          <div class="button-cont">
+            <button class="button-project flex-row" type="button">See project</button>
+          </div>
+        </div>
+      </article>
+    </section>
+    <!--Cards section-->
+    <section class="cards">
+      <article class="single-card flex-row">
+        <div>
+          <h4 class="card-title">Professional Art Printing Data</h4>
+        </div> 
+          <div class="infography-card">
+            <p>
+              A daily selection of privately personalized reads; 
+              no accounts or sign-ups required. Has been the industry's standard.
+            </p>
+          </div>
+          <div class="list-technologies-card">
+            <ul class="list-technologies-card-ul flex-row">
+              <li><a>HTML</a></li>
+              <li><a>Bootstrap</a></li>
+              <li><a>Ruby</a></li>
+            </ul>
+          </div>
+          <button class="button-project-card flex-row">See project</button>
+      </article>
+    </section>
+    <section class="cards">
+      <article class="single-card flex-row">
+        <div>
+          <h4 class="card-title">Professional Art Printing Data</h4>
+        </div> 
+          <div class="infography-card">
+            <p>
+              A daily selection of privately personalized reads; 
+              no accounts or sign-ups required. Has been the industry's standard.
+            </p>
+          </div>
+          <div class="list-technologies-card">
+            <ul class="list-technologies-card-ul flex-row">
+              <li><a>HTML</a></li>
+              <li><a>Bootstrap</a></li>
+              <li><a>Ruby</a></li>
+            </ul>
+          </div>
+          <button class="button-project-card flex-row">See project</button>
+      </article>
+    </section>
+    <section class="cards">
+      <article class="single-card flex-row">
+        <div>
+          <h4 class="card-title">Professional Art Printing Data</h4>
+        </div> 
+          <div class="infography-card">
+            <p>
+              A daily selection of privately personalized reads; 
+              no accounts or sign-ups required. Has been the industry's standard.
+            </p>
+          </div>
+          <div class="list-technologies-card">
+            <ul class="list-technologies-card-ul flex-row">
+              <li><a>HTML</a></li>
+              <li><a>Bootstrap</a></li>
+              <li><a>Ruby</a></li>
+            </ul>
+          </div>
+          <button class="button-project-card flex-row">See project</button>
+      </article>
+    </section>
+    <section class="cards">
+      <article class="single-card flex-row">
+        <div>
+          <h4 class="card-title">Professional Art Printing Data</h4>
+        </div> 
+          <div class="infography-card">
+            <p>
+              A daily selection of privately personalized reads; 
+              no accounts or sign-ups required. Has been the industry's standard.
+            </p>
+          </div>
+          <div class="list-technologies-card">
+            <ul class="list-technologies-card-ul flex-row">
+              <li><a>HTML</a></li>
+              <li><a>Bootstrap</a></li>
+              <li><a>Ruby</a></li>
+            </ul>
+          </div>
+          <button class="button-project-card flex-row">See project</button>
+      </article>
+    </section>
+    <section class="cards">
+      <article class="single-card flex-row">
+        <div>
+          <h4 class="card-title">Professional Art Printing Data</h4>
+        </div> 
+          <div class="infography-card">
+            <p>
+              A daily selection of privately personalized reads; 
+              no accounts or sign-ups required. Has been the industry's standard.
+            </p>
+          </div>
+          <div class="list-technologies-card">
+            <ul class="list-technologies-card-ul flex-row">
+              <li><a>HTML</a></li>
+              <li><a>Bootstrap</a></li>
+              <li><a>Ruby</a></li>
+            </ul>
+          </div>
+          <button class="button-project-card flex-row">See project</button>
+      </article>
+    </section>
+    <!--About me section-->
+    <section class="about-me flex-column">
+      <div class="about-top">
+        <h2 class="title-about">About me</h2>
+        <div class="infography-about">
+          <p>
+            Hello I’m a software developer! I can help you build a product , feature or website Look through some of my work and experience! 
+            If you like what you see and have a project you need coded, don’t hesitate to contact me.
+          </p>
+        </div>
+        <div class="button-cont-resume">
+          <button class="button-resume flex-row">Get my resume</button>
+        </div>
+    </div>
+    <div>
+      <figure class="vector flex-row">
+        <img src="./img/Vector 2.png" alt="vector">
+      </figure>
+    </div>
+      <div class="about-bottom flex-column">
+        <div class="ab-bt-blocks flex-column">
+          <ul>
+            <h4 class="ab-titles languages"> Languages</h4>
+            <li>Javascript</li>
+            <li>Ruby</li>
+            <li>HTML</li>
+            <li>CSS</li>
+          </ul>
+        </div>
+        <div class="ab-bt-blocks">
+          <ul>
+            <h4 class="ab-titles frameworks"> Frameworks</h4>
+            <li>Reac.js</li>
+            <li>Ruby on Rails</li>
+            <li>Rspec</li>
+            <li>Capybara</li>
+          </ul>
+        </div>
+        <div class="ab-bt-blocks">
+          <ul>
+            <h4 class="ab-titles skills"> Skills</h4>
+            <li>Database Management</li>
+            <li>Version Control</li>
+            <li>CLI</li>
+            <li>API Design</li>
+            <li>Web Development</li>
+          </ul>
+        </div>
+      </div>
     </section>
   </main>
   <footer>
-      <ul class="social-media-icons flex-row">
-        <li>
-          <a href="https://github.com/Rebelzob" target="_blank" rel="noopener">
-            <img class="social-media-icon" src="./img/Icon -GitHub.png" alt="Github">
-          </a>
-        </li>
-        <li>
-          <a href="https://www.linkedin.com/in/karim-barragan/" target="_blank" rel="noopener">
-            <img class="social-media-icon" src="./img/Icon - Linkedin.png" alt="Linkedin">
-          </a>
-        </li>
-        <li>
-          <a href="https://www.angellist.com/" target="_blank" rel="noopener">
-            <img class="social-media-icon" src="./img/Icon - Angelist.png" alt="Angelist">
-          </a>
-        </li>
-        <li>
-          <a href="https://twitter.com/home" target="_blank" rel="noopener">
-            <img class="social-media-icon" src="./img/Icon - Twitter.png" alt="Twitter">
-          </a>
-        </li>
-        <li>
-          <a href="https://medium.com/" target="_blank" rel="noopener">
-            <img class="social-media-icon" src="./img/Icon - Medium.png" alt="Medium">
-          </a>
-        </li>
-      </ul>
   </footer>
 </body>
 </html>
