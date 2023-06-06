@@ -308,6 +308,7 @@ a {
 
   .about-me {
     background-color: #1c1a19;
+    padding-bottom: 88px;
   }
 
   .about-top {
@@ -417,12 +418,12 @@ a {
   }
 
   .form-container {
-    background-color: #ffffff;
+    background-color: #fff;
   }
 
   .form-container p {
     font-family: 'Inter', sans-serif;
-    font-weight: 700;
+    font-weight: 1000;
     color: #172b4d;
     font-size: 32px;
     line-height: 44px;
@@ -434,24 +435,37 @@ a {
     justify-content: center;
     text-align: center;
   }
-  #name,#email{
-    border:none;
-    border-bottom:1px solid #DBD8D7 ;
+
+  #name,
+  #email {
+    border: none;
+    border-bottom: 1px solid #dbd8d7;
     height: 80px;
-    margin:0px 20px;
-    padding-left:20px;
+    margin: 0 20px;
+    padding-left: 20px;
     font-size: 15px;
   }
-  #message{
-    border:none;
+
+  #message {
+    border: none;
     height: 114px;
-    margin:10px 20px 10px 20px;
-    background-color: #FBF8F7;
-    padding-left:20px;
-    padding-bottom:50px;
+    margin: 10px 20px 10px 20px;
+    background-color: #fbf8f7;
+    padding-left: 20px;
+    padding-bottom: 50px;
     font-size: 15px;
     font-style: italic;
+  }
 
+  .vector-footer {
+    padding-top: 78px;
+  }
 
+  .social-media-icons-footer {
+    background-color: white;
+    justify-content: center;
+    gap: 15px;
+    padding-top: 25px;
+    padding-bottom: 60px;
   }
 }
