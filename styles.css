@@ -415,4 +415,23 @@ a {
     background: #e5e5e5;
     border: 1px solid #3c3a39;
   }
+
+  .form-container {
+    background-color: #e5e5e5;
+  }
+
+  .form-container p {
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+    color: #172b4d;
+    font-size: 32px;
+    line-height: 44px;
+    text-align: center;
+    padding: 70px 25px 100px 23px;
+  }
+
+  .form {
+    justify-content: center;
+    text-align: center;
+  }
 }
