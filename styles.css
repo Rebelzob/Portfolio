@@ -308,6 +308,7 @@ a {
 
   .about-me {
     background-color: #1c1a19;
+    padding-bottom: 88px;
   }
 
   .about-top {
@@ -414,5 +415,57 @@ a {
     color: #3c3a39;
     background: #e5e5e5;
     border: 1px solid #3c3a39;
+  }
+
+  .form-container {
+    background-color: #fff;
+  }
+
+  .form-container p {
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+    color: #172b4d;
+    font-size: 32px;
+    line-height: 44px;
+    text-align: center;
+    padding: 70px 25px 100px 23px;
+  }
+
+  .form_input {
+    justify-content: center;
+    text-align: center;
+  }
+
+  #name,
+  #email {
+    border: none;
+    border-bottom: 1px solid #dbd8d7;
+    height: 80px;
+    margin: 0 20px;
+    padding-left: 20px;
+    font-size: 15px;
+  }
+
+  #message {
+    border: none;
+    height: 114px;
+    margin: 10px 20px 10px 20px;
+    background-color: #fbf8f7;
+    padding-left: 20px;
+    padding-bottom: 50px;
+    font-size: 15px;
+    font-style: italic;
+  }
+
+  .vector-footer {
+    padding-top: 78px;
+  }
+
+  .social-media-icons-footer {
+    background-color: white;
+    justify-content: center;
+    gap: 15px;
+    padding-top: 25px;
+    padding-bottom: 60px;
   }
 }
