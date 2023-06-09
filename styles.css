@@ -192,6 +192,13 @@ ul li {
   width: 124px;
   height: 48px;
   border: none;
+  transition: all 0.5s ease-out;
+}
+
+.button-project:hover {
+  font-size: 20px;
+  height: 55px;
+  border-radius: 5%;
 }
 
 /* Cards section */
@@ -264,7 +271,9 @@ ul li {
   border: 1px solid #ff6b00;
   justify-content: center;
   padding: 12px;
+  transition: all 0.5s ease-out;
 }
+
 
 /* Cards Section buttons functions */
 
@@ -793,6 +802,14 @@ ul li {
     margin: 0 20px;
     padding-left: 20px;
     font-size: 15px;
+  }
+
+  #first-name, 
+  #last-name, 
+  #name,
+  #email,
+  #message:focus {
+    outline: none;
   }
 
   .infography-contact p {
