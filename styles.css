@@ -321,6 +321,15 @@ ul li {
   background: #e5e5e5;
   border: 1px solid #3c3a39;
 }
+.btn-technologies{
+  transition: all .5s ease-in;
+}
+.btn-technologies:hover{
+  border-radius: 15%;
+  font-family: cursive;
+  box-shadow: 0px 0px 10px rgb(255, 255, 255);
+
+}
 
 /* About me section */
 
