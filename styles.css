@@ -192,6 +192,7 @@ ul li {
   width: 124px;
   height: 48px;
   border: none;
+  transition: all 0.5s ease-out;
 }
 
 /* Cards section */
@@ -264,6 +265,7 @@ ul li {
   border: 1px solid #ff6b00;
   justify-content: center;
   padding: 12px;
+  transition: all 0.5s ease-out;
 }
 
 /* Cards Section buttons functions */
@@ -300,6 +302,9 @@ ul li {
   background: #e5e5e5;
   color: #ff6b00;
   border: 1px solid #ff6b00;
+  font-size: 20px;
+  height: 55px;
+  border-radius: 5%;
 }
 
 .button-project:active {
@@ -311,6 +316,16 @@ ul li {
   color: #3c3a39;
   background: #e5e5e5;
   border: 1px solid #3c3a39;
+}
+
+.btn-technologies {
+  transition: all 0.5s ease-in;
+}
+
+.btn-technologies:hover {
+  border-radius: 15%;
+  font-family: cursive;
+  box-shadow: 0 0 10px rgb(255, 255, 255);
 }
 
 /* About me section */
@@ -793,6 +808,14 @@ ul li {
     margin: 0 20px;
     padding-left: 20px;
     font-size: 15px;
+  }
+
+  #first-name,
+  #last-name,
+  #name,
+  #email,
+  #message:focus {
+    outline: none;
   }
 
   .infography-contact p {
