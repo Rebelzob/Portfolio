@@ -30,6 +30,7 @@
 - [⭐️ Show your support](#support)
 - [🙏 Acknowledgements](#acknowledgements)
 - [❓ FAQ (OPTIONAL)](#faq)
+- [ Walkthrougth](#faq)
 - [📝 License](#license)
 
 
@@ -65,6 +66,7 @@ In this project we used HTML and CSS to make the skeleton of the portfolio proje
 
 
 - [Live Demo Link](https://rebelzob.github.io/Portfolio/)
+- You can watch the [video](https://www.loom.com/share/efc234fa4f074f9294f8bd70d8a6f6bd?sid=7cdf9e7e-23db-476b-8565-2538a679e479) walkthrough here.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
