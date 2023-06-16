@@ -191,6 +191,14 @@ ul li {
 
 /* Cards section */
 
+.cards-container {
+  display: grid;
+  justify-content: space-around;
+  row-gap: 24px;
+  padding-bottom: 5%;
+  padding-top: 5%;
+}
+
 .single-card {
   position: relative;
   flex-direction: column;
