@@ -185,33 +185,25 @@ ul li {
   font-weight: 700;
   text-align: center;
   background: #ff6b00;
-  flex-direction: row;
-  align-items: center;
-  gap: 10px;
   padding: 12px;
-  width: 124px;
   height: 48px;
   border: none;
-  transition: all 0.5s ease-out;
 }
 
 /* Cards section */
 
-.cards {
-  background-color: #e5e5e5;
-  text-shadow: 1px 1px 2px ccc;
-  padding-left: 24px;
-  padding-bottom: 24px;
-  padding-right: 24px;
-}
-
 .single-card {
+  position: relative;
   flex-direction: column;
   background-image: url(./img/card-background.png);
   background-size: contain;
   justify-content: end;
   background-position-x: center;
-  height: 386px;
+  height: 435px;
+  width: 365px;
+  background-color: #e5e5e5;
+  text-shadow: 1px 1px 2px ccc;
+  padding: 0%;
 }
 
 .card-title {
@@ -246,7 +238,7 @@ ul li {
   font-style: normal;
   font-size: 15px;
   line-height: 20px;
-  background: rgba(255, 255, 255, 0.24);
+  background: rgba(255, 255, 255, 0.082);
   padding: 10px 12px;
   color: #fff;
 }
@@ -265,14 +257,23 @@ ul li {
   border: 1px solid #ff6b00;
   justify-content: center;
   padding: 12px;
-  transition: all 0.5s ease-out;
+}
+
+.hover-background {
+  transition: all 1s ease-in-out;
 }
 
 /* Cards Section buttons functions */
 
-.list-technologies-card-ul li:hover {
-  background: #3c3a39;
-  border: 1px solid #75716f;
+.single-card:hover .card-title,
+.single-card:hover .infography-card,
+.single-card:hover .list-technologies-card-ul,
+.single-card:hover .button-project-card {
+  display: none;
+}
+
+.hover-background:hover {
+  background-image: url(./img/mask-cards.svg);
 }
 
 .button-project-card:hover {
@@ -295,16 +296,13 @@ ul li {
 /* My Work Section buttons functions */
 
 .list-technologies-ul li:hover {
-  background: #75716f;
+  background: #d2cdcb;
 }
 
 .button-project:hover {
   background: #e5e5e5;
   color: #ff6b00;
   border: 1px solid #ff6b00;
-  font-size: 20px;
-  height: 55px;
-  border-radius: 5%;
 }
 
 .button-project:active {
@@ -316,16 +314,6 @@ ul li {
   color: #3c3a39;
   background: #e5e5e5;
   border: 1px solid #3c3a39;
-}
-
-.btn-technologies {
-  transition: all 0.5s ease-in;
-}
-
-.btn-technologies:hover {
-  border-radius: 15%;
-  font-family: cursive;
-  box-shadow: 0 0 10px rgb(255, 255, 255);
 }
 
 /* About me section */
@@ -441,6 +429,8 @@ ul li {
   border: 1px solid #3c3a39;
 }
 
+/* Form section */
+
 .form-container {
   background-color: #fff;
 }
@@ -536,6 +526,7 @@ ul li {
     height: 72px;
     align-items: center;
     gap: 32px;
+    color: #fff;
   }
 
   .desktop-menu-links {
@@ -717,13 +708,13 @@ ul li {
     padding: 24px 10% 130px 10%;
   }
 
-  .cards {
+  /* .cards {
     padding: 0;
-  }
+  } */
 
-  .single-card {
+  /* .single-card {
     flex-direction: column;
-  }
+  } */
 
   /* About me section */
 
@@ -810,14 +801,6 @@ ul li {
     font-size: 15px;
   }
 
-  #first-name,
-  #last-name,
-  #name,
-  #email,
-  #message:focus {
-    outline: none;
-  }
-
   .infography-contact p {
     text-align: left;
   }
@@ -835,3 +818,5 @@ ul li {
     padding-bottom: 20px;
   }
 }
+
+
