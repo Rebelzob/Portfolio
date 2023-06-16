@@ -293,7 +293,7 @@ ul li {
 .single-card:hover .infography-card,
 .single-card:hover .list-technologies-card-ul,
 .single-card:hover .button-project-card {
-  display: none;
+  visibility: hidden;
 }
 
 .hover-background:hover {
