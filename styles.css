@@ -51,7 +51,6 @@ ul li {
   font-size: 18px;
   font-weight: 700;
   color: #fff;
-  padding-left: 24px;
 }
 
 .hero {
@@ -265,17 +264,6 @@ ul li {
 
 /* Cards Section buttons functions */
 
-.single-card:hover .card-title,
-.single-card:hover .infography-card,
-.single-card:hover .list-technologies-card-ul,
-.single-card:hover .button-project-card {
-  display: none;
-}
-
-.hover-background:hover {
-  background-image: url(./img/mask-cards.svg);
-}
-
 .button-project-card:hover {
   background: #e5e5e5;
   color: #ff6b00;
@@ -291,6 +279,17 @@ ul li {
   color: #3c3a39;
   background: #e5e5e5;
   border: 1px solid #3c3a39;
+}
+
+.single-card:hover .card-title,
+.single-card:hover .infography-card,
+.single-card:hover .list-technologies-card-ul,
+.single-card:hover .button-project-card {
+  display: none;
+}
+
+.hover-background:hover {
+  background-image: url(./img/mask-cards.svg);
 }
 
 /* My Work Section buttons functions */
@@ -427,6 +426,14 @@ ul li {
   color: #3c3a39;
   background: #e5e5e5;
   border: 1px solid #3c3a39;
+}
+
+.social-media-icon:hover {
+  filter: brightness(50%);
+}
+
+.social-media-icon-footer:hover {
+  filter: brightness(50%);
 }
 
 /* Form section */
@@ -708,14 +715,6 @@ ul li {
     padding: 24px 10% 130px 10%;
   }
 
-  /* .cards {
-    padding: 0;
-  } */
-
-  /* .single-card {
-    flex-direction: column;
-  } */
-
   /* About me section */
 
   .about-top {
@@ -818,5 +817,3 @@ ul li {
     padding-bottom: 20px;
   }
 }
-
-
