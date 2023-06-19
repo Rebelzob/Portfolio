@@ -39,6 +39,33 @@ ul li {
   display: none;
 }
 
+.burger-menu {
+  position: absolute;
+  display: fixed;
+  top: 0px;
+  right: 0px;
+  left: 100%;
+  background-color: #3c3a39;
+  bottom: 0px;
+  transition: left 0.5s ease-in-out;
+  width: 100%;
+}
+
+.burger-menu-toggle {
+  left: 0;
+}
+
+.mobile-menu{
+  gap: 40px;
+}
+
+.mobile-menu-item {
+  font-family: 'Inter', sans-serif;
+  font-size: 32px;
+  font-weight: 700;
+  color: #fff5e1;
+}
+
 .toolbar {
   justify-content: space-between;
   background-color: #3c3a39;
