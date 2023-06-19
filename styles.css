@@ -546,6 +546,10 @@ ul li {
     display: none;
   }
 
+  .burger-menu-img {
+    display: none;
+  }
+
   .toolbar {
     background-color: #3c3a39;
     width: 100%;
