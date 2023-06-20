@@ -26,6 +26,7 @@ header {
 
 body {
   background-color: #e5e5e5;
+
   /* overflow-x: hidden; */
 }
 
@@ -33,52 +34,43 @@ ul li {
   list-style-type: none;
 }
 
-/* Hero section */
-
 .navbar-desktop-menu {
   display: none;
 }
 
+/* Burger menu style */
+
 .burger-menu {
-  position: absolute;
-  display: fixed;
-  top: 0px;
-  right: 0px;
-  left: 100%;
+  z-index: 999;
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
   background-color: #3c3a39;
-  bottom: 0px;
   transition: left 0.5s ease-in-out;
   width: 100%;
 }
 
-/* Para js */
-
-.burger-menu {
-  left: -100%;
-  z-index: 999;
-  position: fixed;
+.burger-menu-hidden {
+  left: 100%;
 }
 
 .cross-menu {
   position: absolute;
   top: 10px;
   right: 10px;
-}
-
-/* termina js */
-
-.burger-menu-toggle {
-  left: 0;
   cursor: pointer;
 }
 
-.mobile-menu{
+.mobile-menu {
   gap: 40px;
   position: absolute;
-  width: 327px;
+  width: 100%;
   height: 184px;
   left: 24px;
   top: 92px;
+  padding-right: 15%;
 }
 
 .mobile-menu-item {
@@ -86,7 +78,16 @@ ul li {
   font-size: 32px;
   font-weight: 700;
   color: #fff5e1;
+  padding-left: 40px;
 }
+
+.mobile-menu li {
+  border-bottom: 1px solid #6f6c6b;
+  width: 100%;
+  padding-bottom: 15px;
+}
+
+/* Toolbar and Hero section style */
 
 .toolbar {
   justify-content: space-between;
@@ -100,6 +101,7 @@ ul li {
   font-size: 18px;
   font-weight: 700;
   color: #fff;
+  padding-left: 24px;
 }
 
 .hero {
@@ -567,7 +569,7 @@ ul li {
     display: none;
   }
 
-  .burger-menu-img {
+  .burger-menu-toggle {
     display: none;
   }
 
@@ -602,6 +604,10 @@ ul li {
     color: #fff;
     font-weight: 600;
     font-size: 15px;
+  }
+
+  .mail-icon {
+    cursor: pointer;
   }
 
   .hero {
