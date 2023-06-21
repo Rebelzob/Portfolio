@@ -367,10 +367,6 @@ ul li {
   background: rgba(0, 0, 0, 0.8);
 }
 
-.overlay {
-  display: block;
-}
-
 .modal-title {
   justify-content: space-between;
   padding-left: 16px;
