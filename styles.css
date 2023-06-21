@@ -342,13 +342,71 @@ ul li {
 
 .single-card:hover .card-title,
 .single-card:hover .infography-card,
-.single-card:hover .list-technologies-card-ul,
-.single-card:hover .button-project-card {
+.single-card:hover .list-technologies-card-ul {
   visibility: hidden;
 }
 
 .hover-background:hover {
   background-image: url(./img/mask-cards.svg);
+}
+
+/* Modal styling */
+
+.modal {
+  top: 50%;
+  left: 50%;
+  translate: -50% -50%;
+  background: #fff;
+  z-index: 10;
+  border: 1px solid #3c3a39;
+  width: max-content;
+  transition: all 0.5s ease-in-out;
+}
+
+.modal::backdrop {
+  background: rgba(0, 0, 0, 0.8);
+}
+
+.overlay {
+  display: block;
+}
+
+.modal-title {
+  justify-content: space-between;
+  padding-left: 16px;
+}
+
+.modal-title img {
+  padding: 12px;
+}
+
+.modal-techs {
+  padding-top: 24px;
+  padding-bottom: 20px;
+  padding-left: 16px;
+}
+
+.modal-img {
+  padding-left: 16px;
+  padding-right: 16px;
+  width: 100%;
+}
+
+.modal-btn-set {
+  justify-content: space-between;
+  padding-left: 16px;
+  padding-right: 16px;
+  margin-bottom: 20px;
+}
+
+.modal-paragraph {
+  font-family: 'Inter', sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  color: #344563;
+  text-align: justify;
+  padding: 24px 16px 16px 16px;
 }
 
 /* My Work Section buttons functions */
