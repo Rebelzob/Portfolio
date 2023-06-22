@@ -374,6 +374,8 @@ ul li {
 
 .modal-title img {
   padding: 12px;
+  width: 62px;
+  height: 62px;
 }
 
 .modal-techs {
@@ -383,9 +385,12 @@ ul li {
 }
 
 .modal-img {
+  display: flex;
   padding-left: 16px;
   padding-right: 16px;
   width: 100%;
+  max-width: 360px;
+  text-align: center;
 }
 
 .modal-btn-set {
@@ -403,6 +408,20 @@ ul li {
   color: #344563;
   text-align: justify;
   padding: 24px 16px 16px 16px;
+}
+
+.modal-btn-livelink svg {
+  padding-left: 5px;
+}
+
+.modal-btn-source svg {
+  padding-left: 5px;
+}
+
+.modal-btn-livelink:hover svg path,
+.modal-btn-source:hover svg path,
+.button-project:hover {
+  fill: #ff6b00;
 }
 
 /* My Work Section buttons functions */
@@ -740,8 +759,6 @@ ul li {
 
   .vector-img {
     height: 2px;
-
-    /* justify-self: center; */
     align-self: center;
     width: 100%;
     padding-right: 10%;
@@ -834,6 +851,65 @@ ul li {
     row-gap: 37px;
     width: 100%;
     padding: 24px 10% 130px 10%;
+  }
+
+  /* Modal desktop style */
+
+  .modal {
+    max-width: 90vh;
+    max-height: 90vh;
+  }
+
+  .modal-title {
+    padding-top: 20px;
+  }
+
+  .modal-title-desktop {
+    padding-bottom: 16px;
+  }
+
+  .modal-techs-btn {
+    gap: 15px;
+  }
+
+  .modal-techs {
+    padding: 0 0 40px 16px;
+  }
+
+  .modal-img {
+    max-width: 100%;
+  }
+
+  .modal-desktop-top {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .modal-desktop-bottom {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .item1 {
+    grid-column: 1;
+    grid-row-start: 1;
+    grid-row-end: 2;
+  }
+
+  .item2 {
+    padding-top: 0;
+    grid-column: 2;
+    grid-row: 1;
+  }
+
+  .item3 {
+    grid-column: 2;
+    grid-row: 2;
+  }
+
+  .modal-btn-set {
+    justify-content: left;
+    gap: 5%;
   }
 
   /* About me section */
