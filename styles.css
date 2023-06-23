@@ -26,8 +26,7 @@ header {
 
 body {
   background-color: #e5e5e5;
-
-  /* overflow-x: hidden; */
+  overflow-x: hidden;
 }
 
 ul li {
@@ -625,14 +624,23 @@ ul li {
   padding-bottom: 60px;
 }
 
+.error {
+  display: none;
+  color: white;
+  padding: 10px;
+  border-radius: 5px;
+  font-weight: bold;
+  font-size: 14px;
+  margin-top: 10px;
+}
+
+.error.active {
+  display: inline;
+}
+
 /* Mobile version */
 
 @media only screen and (max-width: 767px) {
-  #first-name,
-  #last-name {
-    display: none;
-  }
-
   .button-contact {
     text-align: center;
   }
@@ -979,10 +987,6 @@ ul li {
 
   /* Contact me section */
 
-  #name {
-    display: none;
-  }
-
   .infography-contact {
     padding: 0%;
   }
@@ -999,21 +1003,6 @@ ul li {
 
   .vector-footer {
     display: none;
-  }
-
-  .first-last-name {
-    display: flex;
-    justify-content: space-between;
-  }
-
-  #first-name,
-  #last-name {
-    border: none;
-    border-bottom: 1px solid #dbd8d7;
-    height: 80px;
-    margin: 0 20px;
-    padding-left: 20px;
-    font-size: 15px;
   }
 
   .infography-contact p {
