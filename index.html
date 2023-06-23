@@ -116,128 +116,16 @@
               </ul>
             </div>
             <div class="button-cont">
-              <button type="button" class="button-project flex-row" type="button">See project</button>
+              <button open-modal type="button" id="works-btn" class="button-project flex-row">See project</button>
             </div>
           </div>
         </div>
       </article>
     </section>
     <!--Cards section-->
-    <section class="cards-container">
-      <article class="single-card flex-row desktop-version hover-background hover-img">
-        <div>
-          <h4 class="card-title">Professional Art Printing Data</h4>
-        </div> 
-        <div class="infography-card">
-          <p>
-            A daily selection of privately personalized reads; 
-            no accounts or sign-ups required. Has been the industry's standard.
-          </p>
-        </div>
-        <div class="list-technologies-card">
-          <ul class="list-technologies-card-ul flex-row">
-            <li>HTML</li>
-            <li>Bootstrap</li>
-            <li>Ruby</li>
-          </ul>
-        </div>
-        <button type="button" class="button-project-card flex-row">See project</button>
-      </article>
-      <article class="single-card flex-row desktop-version hover-background hover-img">
-        <div>
-          <h4 class="card-title">Professional Art Printing Data</h4>
-        </div> 
-          <div class="infography-card">
-            <p>
-              A daily selection of privately personalized reads; 
-              no accounts or sign-ups required. Has been the industry's standard.
-            </p>
-          </div>
-          <div class="list-technologies-card">
-            <ul class="list-technologies-card-ul flex-row">
-              <li><a>HTML</a></li>
-              <li><a>Bootstrap</a></li>
-              <li><a>Ruby</a></li>
-            </ul>
-          </div>
-          <button type="button" class="button-project-card flex-row">See project</button>
-      </article>
-      <article class="single-card flex-row desktop-version hover-background hover-img">
-        <div>
-          <h4 class="card-title">Professional Art Printing Data</h4>
-        </div> 
-          <div class="infography-card">
-            <p>
-              A daily selection of privately personalized reads; 
-              no accounts or sign-ups required. Has been the industry's standard.
-            </p>
-          </div>
-          <div class="list-technologies-card">
-            <ul class="list-technologies-card-ul flex-row">
-              <li><a>HTML</a></li>
-              <li><a>Bootstrap</a></li>
-              <li><a>Ruby</a></li>
-            </ul>
-          </div>
-          <button type="button" class="button-project-card flex-row">See project</button>
-      </article>
-      <article class="single-card flex-row desktop-version hover-background hover-img">
-        <div>
-          <h4 class="card-title">Professional Art Printing Data</h4>
-        </div> 
-          <div class="infography-card">
-            <p>
-              A daily selection of privately personalized reads; 
-              no accounts or sign-ups required. Has been the industry's standard.
-            </p>
-          </div>
-          <div class="list-technologies-card">
-            <ul class="list-technologies-card-ul flex-row">
-              <li><a>HTML</a></li>
-              <li><a>Bootstrap</a></li>
-              <li><a>Ruby</a></li>
-            </ul>
-          </div>
-          <button type="button" class="button-project-card flex-row">See project</button>
-      </article>
-      <article class="single-card flex-row desktop-version hover-background hover-img">
-        <div>
-          <h4 class="card-title">Professional Art Printing Data</h4>
-        </div> 
-          <div class="infography-card">
-            <p>
-              A daily selection of privately personalized reads; 
-              no accounts or sign-ups required. Has been the industry's standard.
-            </p>
-          </div>
-          <div class="list-technologies-card">
-            <ul class="list-technologies-card-ul flex-row">
-              <li><a>HTML</a></li>
-              <li><a>Bootstrap</a></li>
-              <li><a>Ruby</a></li>
-            </ul>
-          </div>
-          <button type="button" class="button-project-card flex-row">See project</button>
-      </article>
-      <article class="single-card flex-row desktop-version hover-background hover-img">
-        <div>
-          <h4 class="card-title">Professional Art Printing Data</h4>
-        </div> 
-          <div class="infography-card">
-            <p>
-              A daily selection of privately personalized reads; 
-              no accounts or sign-ups required. Has been the industry's standard.
-            </p>
-          </div>
-          <div class="list-technologies-card">
-            <ul class="list-technologies-card-ul flex-row">
-              <li><a>HTML</a></li>
-              <li><a>Bootstrap</a></li>
-              <li><a>Ruby</a></li>
-            </ul>
-          </div>
-          <button type="button" class="button-project-card flex-row">See project</button>
-      </article>
+    <dialog id="modal-container" class="modal">
+    </dialog>
+    <section class="cards-container" id="works">
     </section>
     <!--About me section-->
     <section class="about-me flex-column" id="about">
@@ -271,7 +159,7 @@
         <div class="ab-bt-blocks">
           <ul>
             <h4 class="ab-titles frameworks"> Frameworks</h4>
-            <li class="about-bullet">Reac.js</li>
+            <li class="about-bullet">React.js</li>
             <li class="about-bullet">Ruby on Rails</li>
             <li class="about-bullet">Rspec</li>
             <li class="about-bullet">Capybara</li>
@@ -342,5 +230,6 @@
   </footer>
   <!-- Scripts -->
   <script src="./js/main.js"></script>
+  <script src="./js/popup.js"></script>
 </body>
 </html>
