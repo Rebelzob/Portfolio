@@ -364,7 +364,10 @@ ul li {
 }
 
 .modal::backdrop {
-  background: rgba(0, 0, 0, 0.8);
+  background: rgba(0, 0, 0, 0.9);
+  filter: blur(8px);
+
+  /* -webkit-filter: blur(8px) */
 }
 
 .modal-title {
@@ -395,7 +398,7 @@ ul li {
 
 .modal-btn-set {
   justify-content: space-between;
-  padding-left: 16px;
+  padding-top: 20px;
   padding-right: 16px;
   margin-bottom: 20px;
 }
@@ -853,10 +856,19 @@ ul li {
     padding: 24px 10% 130px 10%;
   }
 
+  .button-project-card {
+    display: none;
+  }
+
+  .single-card:hover .button-project-card {
+    display: flex;
+  }
+
+
   /* Modal desktop style */
 
   .modal {
-    max-width: 90vh;
+    max-width: 80vw;
     max-height: 90vh;
   }
 
@@ -888,6 +900,7 @@ ul li {
   .modal-desktop-bottom {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
+    padding-bottom: 2%;
   }
 
   .item1 {
@@ -909,7 +922,14 @@ ul li {
 
   .modal-btn-set {
     justify-content: left;
-    gap: 5%;
+    gap: 10%;
+    padding-bottom: 0;
+    margin-bottom: 0;
+  }
+
+  .modal-paragraph {
+    justify-content: space-between;
+    padding-bottom: 0;
   }
 
   /* About me section */
