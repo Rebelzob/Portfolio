@@ -15,6 +15,5 @@ form.addEventListener('submit', (e) => {
     errorMsg.textContent = 'Form successfully submitted';
     errorMsg.style.backgroundColor = '#4caf50';
     errorMsg.classList.add('active');
-    e.preventDefault();
   }
 });
