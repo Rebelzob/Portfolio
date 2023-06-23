@@ -182,17 +182,14 @@
       <div class="infography-contact">
         <p>I'm always interested in hearing about new projects, so if you'd like to chat please get in touch.</p>
       </div>
-      <div class="form flex-column">
-        <form class="flex-column " action="https://formspree.io/f/mayzgdra" method="POST" class="form-data">
+      <div class="flex-column">
+        <form id="form" class="flex-column form-data" action="https://formspree.io/f/mayzgdra" method="POST">
           <input type="text" name="name" id="name" placeholder="Full name" required maxlength="30">
-          <div class="first-last-name">
-            <input type="text" name="first-name" id="first-name" placeholder="First Name" required maxlength="30">
-            <input type="text" name="last-name" id="last-name" placeholder="Last Name" required maxlength="30">
-          </div>
           <input type="email" name="email" id="email" placeholder="Email address" required>
           <input type="textarea" name="message" id="message" placeholder="Write something..." required maxlength="500">
           <div class="button-contact">
             <button type="submit" class="button-resume">Get in touch</button>
+            <span class="error"></span>
           </div>
           <img src="/img/Rectangle 42.png" alt="" class="vector-footer">
         </form>
@@ -231,5 +228,6 @@
   <!-- Scripts -->
   <script src="./js/main.js"></script>
   <script src="./js/popup.js"></script>
+  <script src="./js/validators.js"></script>
 </body>
 </html>
