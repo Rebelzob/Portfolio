@@ -6,27 +6,27 @@ const projects = [
 
   {
     id: 1,
+    title: 'Tropical Getaways',
+    subtitle: 'Where to plan your next vacations',
+    description: 'A travel agency webpage to plan your next trip to the caribbean',
+    technologies: ['HTML', 'Node.js', 'CSS'],
+    imagePath: './img/Capstone-project-module-surfacepro-1-transformed.png',
+    modalImagePath: './img/Capstone-project-module-1.png',
+    liveLink: 'https://rebelzob.github.io/Travel-agency/',
+    sourceCodeLink: 'https://github.com/Rebelzob/Travel-agency',
+    modalDescription: "Explore the beauty of the Caribbean with Tropical Getaways, your ultimate travel agency for planning your next vacation. With a user-friendly website, we offer a seamless experience to discover stunning destinations and create unforgettable memories. Powered by HTML, Node.js, and CSS, our website combines functionality with visual appeal. Check out the live website to start planning your dream trip to the Caribbean! Visit the source code on GitHub for a closer look at the technologies used.",
+  },
+  {
+    id: 2,
     title: 'Multi-Post Stories',
     subtitle: 'Create and share captivating stories',
     description: "A daily selection of privately personalized reads; no accounts or sign-ups required. This has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a standard dummy text.",
     technologies: ['CSS', 'HTML', 'Bootstrap', 'Ruby'],
-    imagePath: 'images/project7.jpg',
+    imagePath: './img/card-background.png',
     modalImagePath: './img/Snapshoot Portfolio.svg',
     liveLink: 'https://rebelzob.github.io/Portfolio/',
     sourceCodeLink: 'https://github.com/Rebelzob/Portfolio',
     modalDescription: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed maximus iaculis elit, sed interdum urna pellentesque a. Nulla vel maximus magna. Curabitur id malesuada nisl. Suspendisse potenti. Vestibulum pharetra commodo neque, vitae hendrerit nunc varius ac. Nam sodales efficitur libero, eu pulvinar erat vestibulum a.',
-  },
-  {
-    id: 2,
-    title: 'Social Media Platform',
-    subtitle: 'Connect and interact with friends',
-    description: 'A platform for connecting and interacting with friends',
-    technologies: ['React', 'Node.js', 'Express.js'],
-    imagePath: 'images/project3.jpg',
-    modalImagePath: './img/Snapshoot Portfolio.svg',
-    liveLink: 'https://rebelzob.github.io/Portfolio/',
-    sourceCodeLink: 'https://github.com/Rebelzob/Portfolio',
-    modalDescription: "Join the party on our Social Media Platform! Connect with friends, share hilarious memes, and keep up with the latest trends. It's your one-stop-shop for all things social. From epic group chats to jaw-dropping posts, get ready to immerse yourself in a world of endless fun, laughter, and never-ending virtual high-fives!",
   },
   {
     id: 3,
@@ -34,7 +34,7 @@ const projects = [
     subtitle: 'Manage and organize your tasks',
     description: 'An application for managing and organizing tasks',
     technologies: ['Angular', 'Firebase', 'TypeScript'],
-    imagePath: 'images/project4.jpg',
+    imagePath: './img/card-background.png',
     modalImagePath: './img/Snapshoot Portfolio.svg',
     liveLink: 'https://rebelzob.github.io/Portfolio/',
     sourceCodeLink: 'https://github.com/Rebelzob/Portfolio',
@@ -46,7 +46,7 @@ const projects = [
     subtitle: 'Express yourself through blogging',
     description: 'A platform for creating and publishing blog posts',
     technologies: ['React', 'Node.js', 'Express.js'],
-    imagePath: 'images/project5.jpg',
+    imagePath: './img/card-background.png',
     modalImagePath: './img/Snapshoot Portfolio.svg',
     liveLink: 'https://rebelzob.github.io/Portfolio/',
     sourceCodeLink: 'https://github.com/Rebelzob/Portfolio',
@@ -58,7 +58,7 @@ const projects = [
     subtitle: 'Track your fitness journey',
     description: 'An application for tracking fitness activities and progress',
     technologies: ['Vue.js', 'Firebase', 'CSS'],
-    imagePath: 'images/project6.jpg',
+    imagePath: './img/card-background.png',
     modalImagePath: './img/Snapshoot Portfolio.svg',
     liveLink: 'https://rebelzob.github.io/Portfolio/',
     sourceCodeLink: 'https://github.com/Rebelzob/Portfolio',
@@ -70,7 +70,7 @@ const projects = [
     subtitle: 'Shop your favorite products online',
     description: 'An online store for selling various products',
     technologies: ['HTML', 'CSS', 'JavaScript'],
-    imagePath: 'images/project2.jpg',
+    imagePath: './img/card-background.png',
     modalImagePath: './img/Snapshoot Portfolio.svg',
     liveLink: 'https://rebelzob.github.io/Portfolio/',
     sourceCodeLink: 'https://github.com/Rebelzob/Portfolio',
@@ -88,6 +88,7 @@ function generateProjectCards() {
     project.technologies.forEach((tech) => {
       technologiesList += `<li>${tech}</li>`;
     });
+    card.style.backgroundImage = `url(${project.imagePath})`;
     card.innerHTML = `
         <div>
           <h4 class="card-title">${project.title}</h4>
@@ -121,7 +122,7 @@ function generateModal(project) {
   mod.innerHTML = `
   <div class="modal-desktop-top">
   <div class="flex-row modal-title">
-    <h4 class="sub-title-3 modal-title-desktop">${project.title}</h4>
+    <h4 class="sub-title-3 modal-title-desktop">${project.subtitle}</h4>
     <img close-modal src="./img/Cross-menu.png" alt="close">
   </div> 
   <div class="modal-techs list-technologies flex-row">
